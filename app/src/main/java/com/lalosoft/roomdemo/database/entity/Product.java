@@ -20,6 +20,9 @@ public class Product {
     @ColumnInfo(name = "image_url")
     private String imageUrl;
 
+    @ColumnInfo(name = "price")
+    private int price;
+
     public int getUid() {
         return uid;
     }
@@ -42,5 +45,13 @@ public class Product {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
     }
 }
