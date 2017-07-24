@@ -52,7 +52,8 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         }
 
         public void bind(Product product) {
-            name.setText(product.getName());
+            String price = itemView.getContext().getString(R.string.price_format, String.valueOf(product.getPrice()));
+            name.setText(product.getName() + "-" + price);
             Picasso.with(itemView.getContext()).load(product.getImageUrl()).into(image);
         }
     }

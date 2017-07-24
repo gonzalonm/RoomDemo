@@ -6,6 +6,7 @@ import android.arch.persistence.room.RoomDatabase;
 import android.arch.persistence.room.TypeConverters;
 import android.arch.persistence.room.migration.Migration;
 
+import com.lalosoft.roomdemo.App;
 import com.lalosoft.roomdemo.database.entity.Product;
 
 /**
@@ -22,6 +23,9 @@ public abstract class MyDatabase extends RoomDatabase {
         public void migrate(SupportSQLiteDatabase database) {
             database.execSQL("ALTER TABLE product "
                     + " ADD COLUMN price INTEGER");
+
+            // enable flag to force update products
+            App.get().setForceUpdate(true);
         }
     };
 }
