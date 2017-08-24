@@ -25,8 +25,8 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
 
     // Room
-    compile 'android.arch.persistence.room:runtime:1.0.0-alpha5'
-    annotationProcessor 'android.arch.persistence.room:compiler:1.0.0-alpha5'
+    compile 'android.arch.persistence.room:runtime:1.0.0-alpha9'
+    annotationProcessor 'android.arch.persistence.room:compiler:1.0.0-alpha9'
 
     // picasso
     compile 'com.squareup.picasso:picasso:2.5.2'
