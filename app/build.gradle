@@ -21,12 +21,12 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
-    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
 
     // Room
-    compile 'android.arch.persistence.room:runtime:1.0.0-alpha9'
-    annotationProcessor 'android.arch.persistence.room:compiler:1.0.0-alpha9'
+    compile 'android.arch.persistence.room:runtime:1.0.0-beta1'
+    annotationProcessor 'android.arch.persistence.room:compiler:1.0.0-beta1'
 
     // picasso
     compile 'com.squareup.picasso:picasso:2.5.2'
