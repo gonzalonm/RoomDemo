@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < 10; i++) {
             Product product = new Product();
             product.setName(getString(R.string.name_format, String.valueOf(i)));
-            product.setImageUrl("http://lorempixel.com/500/500/technics/" + i);
+            product.setImageUrl("https://picsum.photos/500/500?image=" + i);
             product.setPrice(i == 0 ? 50 : i * 100);
             list.add(product);
         }
