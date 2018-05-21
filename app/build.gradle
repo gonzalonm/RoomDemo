@@ -19,12 +19,15 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:27.1.0'
-    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    def roomVersion = "1.1.0"
+    def supportVersion = "27.1.0"
+
+    implementation "com.android.support:appcompat-v7:$supportVersion"
+    implementation "com.android.support:recyclerview-v7:$supportVersion"
 
     // Room
-    implementation 'android.arch.persistence.room:runtime:1.0.0'
-    annotationProcessor 'android.arch.persistence.room:compiler:1.0.0'
+    implementation "android.arch.persistence.room:runtime:$roomVersion"
+    annotationProcessor "android.arch.persistence.room:compiler:$roomVersion"
 
     // picasso
     compile 'com.squareup.picasso:picasso:2.5.2'
